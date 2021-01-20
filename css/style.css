@@ -1,0 +1,741 @@
+/* Обнуление */
+* {padding: 0; margin: 0; border: 0}
+*:before, *:after {box-sizing: border-box;}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+header, nav, aside, footer {display: block;}
+html, body {-ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%;}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none; color: white;}
+ul li {list-style: none;}
+img {border-style: none;}
+sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sub {bottom: -0.25em;}
+sup {top: -0.5em;}
+
+
+/* Fonts */
+@font-face {
+   font-family: 'Montserrat';
+   src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+   font-family: 'Cormorant';
+   src: url(../fonts/CormorantInfant-Regular.ttf);
+   src: url(../fonts/CormorantInfant-Light.ttf);
+}
+
+/* Main Styles */
+header {
+	height: 650px;
+	margin: 0 auto;
+	background-image: url(../img/headerBanner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	width: 580px;
+	line-height: 40px;
+}
+
+.nav-menu a {
+	transition: .3s;
+	position: relative;
+	font-family: 'Montserrat';
+}
+
+.nav-menu a:hover {
+	padding-top: 4px;
+	color: #9ae6f3;
+}
+
+.rightSide-menu {
+	line-height: 40px;
+}
+
+.phone {
+	vertical-align: middle;
+}
+
+.fa-phone {
+	color: white;
+}
+
+.call-number {
+	display: inline-block;
+   height:  25px;
+   line-height: 25px;
+   padding: 0 10px;
+   letter-spacing: 0.8px;
+}
+
+.call-number a {
+	color: #9ae6f3;
+	transition: .3s;
+}
+
+.call-number a:hover {
+	color: white;
+}
+
+.menu-toggle {
+	display: none;
+	float: right;
+}
+
+.menu-toggle i {
+	color: #9ae6f3;
+	padding-left: 10px;
+}
+
+.call-taxi {
+	margin-left: 90px;
+	margin-top: 180px;
+	width: 340px;
+	height: 240px;
+}
+
+.elite-taxi {
+	font-size: 50px;
+	color: white;
+	font-family: 'Cormorant', serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #9ae6f3;
+}
+
+.about-taxi {
+	width: 325px;
+	height: 70px;
+	color: white;
+	line-height: 25px;
+	margin: 20px auto;
+	font-family: 'Montserrat', serif;
+	letter-spacing: .5px;
+}
+
+.call-block {
+	padding-top: 15px;
+}
+
+.call-btn {
+	width: 230px;
+	height: 50px;
+	background: #9ae6f3;
+	border-radius: 50px;
+	font-size: 19px;
+	font-family: 'Montserrat', serif;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.call-btn:hover {
+	background: #29cbe6;
+}
+
+
+
+/* car types (car-blocks) */
+.car-types_wrapper {
+	padding: 100px 0;
+}
+
+.car-types_container {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.s560 {
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+}
+
+.car-items {
+	text-align: center;
+	transition: .3s;
+}
+
+.car-items:hover {
+	box-shadow: 0 0 15px 2px rgba(0,0,0,.3);
+}
+
+.car-items h3{
+	font-family: 'Montserrat', serif;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+
+.taxi-plan {
+	font-family: 'Montserrat', serif;
+	font-size: 14px;
+	width: 76%;
+	margin: 0 auto;
+	padding: 20px 0;
+	line-height: 20px;
+}
+
+.order-taxi {
+	margin: 30px 0;
+}
+
+.car-block {
+	width: 28%;
+	height: 370px;
+	margin: 0 10px;
+	border-radius: 15px;
+}
+
+.taxi-container {
+	width: 300px;
+	padding: 0 5px;
+}
+
+.taxi-container p:first-child {
+	font-size: 36px;
+	font-family: 'Montserrat', serif;
+	margin-bottom: 40px;
+}
+
+.about-ti {
+	margin-bottom: 20px;
+	padding: 0 5px;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	font-family: 'Montserrat', serif;
+}
+
+.order-taxi {
+	border: 1px solid black;
+	background-color: #fff;
+	color: black;
+	padding: 10px 35px;
+	border-radius: 50px;
+	font-family: 'Montserrat', serif;
+	transition: .3s;
+}
+
+.order-taxi:hover {
+	background: black;
+	box-shadow: 0 5px 15px 2px rgba(0,0,0,.5);
+	color: white;
+}
+
+
+/* Rent a car */
+.rent-car_wrapper {
+	padding: 100px 0;
+}
+
+.rent-car_container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.rent-car_container h3 {
+	font-size: 36px;
+	font-family: 'Montserrat', serif;
+	padding: 0 30px;
+}
+
+.rent-car {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0 10px 0;
+}
+
+.rent-car-items {
+	transition: .3s;
+	width: 32%;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.rent-car-items img {
+	width: 75%;
+	height: auto;
+}
+
+.rent-car-items .marriage-rolls {
+	width: 65%;
+}
+
+.rent-car-items:hover {
+	cursor: pointer;
+	box-shadow: 0 0 15px 2px rgba(0,0,0,.3);
+}
+
+.rentCar_types-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rentCar_types {
+	text-align: center;
+	font-family: 'Montserrat', serif;	
+}
+
+.make-request {
+	margin: 40px 0;
+	text-align: center;
+}
+
+.make-request button {
+	width: 230px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid black;
+	background: white;
+	transition: .3s;
+	font-family: 'Montserrat', serif;
+	font-size: 15px;
+}
+
+.make-request button:hover {
+	background: black;
+	color: white;
+	box-shadow: 0 3px 5px 2px rgba(0,0,0,.5);
+}
+
+/* Our advantages */
+.our-advantages {
+	padding: 100px 0;
+}
+
+.advantages {
+	font-family: 'Montserrat', serif;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.advantages-wrapper {
+	width: 80%;
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.advantages-items {
+	width: 30%;
+	text-align: center;
+	box-shadow: 0 5px 17px 2px rgba(0,0,0,.1);
+	border-radius: 20px;
+	padding: 20px 0;
+}
+
+.advantages-items img {
+	vertical-align: super;
+}
+
+.advantages-items p {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Montserrat', serif;
+	color: #222666;
+}
+
+.advantages-items div:last-child {
+	font-family: 'Montserrat', serif;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	margin-top: 30px;
+	padding: 0 50px;
+}
+
+
+/* Footer */
+footer {
+	background-color: black;
+	padding: 40px 0;
+}
+
+.footer-inner-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-menu {
+	width: 42%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	font-family: "Montserrat", serif;
+	font-size: 13px;
+}
+
+.footer-menu a {
+	transition: .3s;
+}
+
+.footer-menu a:hover {
+	color: #9ae6f3;
+}
+
+.footer-phoneCall {
+	width: 12%;
+	padding-top: 10px;
+}
+
+.footer-phoneCall a {
+	float: right;
+}
+
+.footer-phoneCall a:hover {
+	color: #9ae6f3;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+	.footer-menu {
+		width: 60%;
+	}
+
+	.footer-phoneCall {
+		display: none;
+	}
+}
+
+
+
+/* Header Media Query <991px */
+@media (max-width: 991px) {
+	.menu-toggle {
+		display: block;
+	}
+
+	.nav-menu {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #333;
+		top: 100px;
+		left: -100%;
+		transition: 0.6s;
+		background: black;
+		flex-direction: column;
+		justify-content: space-evenly;
+		text-align: center;
+		margin: 0;
+	}
+
+	.nav-menu.active {
+		left: 0;
+	}
+
+	.nav-menu a {
+		display: block;
+	}
+
+	.nav-menu a:hover {
+		padding: 0;
+		color: black;
+		background: #9ae6f3;
+	}
+
+	.call-number {
+		padding: 0 3px;
+	}
+
+	.menu-toggle i {
+		color: #9ae6f3;
+		padding-left: 5px;
+	}
+
+
+
+	/* Car types */
+	.car-types_container {
+		flex-wrap: wrap;
+	}
+
+	.car-types_container div:last-child {
+		margin: 40px auto;
+	}
+
+	.about-ti {
+		line-height: 30px;
+		font-size: 15px;
+	}
+
+	.taxi-container {
+		width: 100%;
+		text-align: center;
+	}
+
+	.car-md {
+		width: 45%;
+		box-shadow: 0 0 20px 1px rgba(0,0,0,.1)
+	}
+
+	.order-taxi {
+		margin: 15px 0;
+		border: 1px solid rgba(0,0,0,.5);
+	}
+
+	.taxi-container p:first-child {
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+
+	/* rent a car */
+	.rent-car_container h3 {
+		text-align: center;
+	}
+
+	.rent-car {
+		flex-wrap: wrap;
+	}
+
+	.rent-car-items {
+		width: 90%;
+		margin: 20px auto;
+		text-align: center;
+	}
+	
+	.rentCar_types {
+		width: 48%;
+		display: inline-block;
+	}
+
+
+	/* Our advantages */
+	.advantages-wrapper {
+		flex-wrap: wrap;
+	}
+
+	.advantages-items {
+		width: 90%;
+		margin: 40px auto;
+		padding: 40px 0;
+	}
+
+	.footer-inner-block img {
+		display: none;
+	}
+
+	.footer-menu {
+		width: 100%;
+		padding: 5px 0;
+	}
+
+	.footer-menu a {
+		width: 17%;
+		font-size: 13px;
+		text-align: center;
+	}
+
+	.footer-menu a:hover {
+		color: #9ae6f3;
+	}
+
+	.footer-phoneCall {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------ */
+/* Small devices (landscape phones, 576px and down) */
+
+@media (max-width: 576px) {
+	.call-taxi {
+		margin: 65px auto;
+		text-align: center;
+	}
+
+	.elite-taxi {
+		font-size: 45px;
+	}
+
+	.about-taxi {
+		margin: 20px auto;
+		font-size: 14px;
+	}
+
+	.call-btn {
+		width: 180px;
+		height: 50px;
+		background: #9ae6f3;
+		border-radius: 50px;
+		font-size: 16px;
+		font-family: 'Montserrat', serif;
+		font-weight: 600;
+		cursor: pointer;
+		transition: .3s;
+	}
+
+
+
+	/* Car type */
+	.taxi-container {
+		overflow: hidden;
+	}
+
+	.car-types_wrapper {
+		padding: 50px 0;
+	}
+
+	.car-md {
+		width: 90%;
+		height: 400px;
+		box-shadow: 0 0 20px 1px rgba(0,0,0,.1);
+		margin: 20px auto;
+	}
+
+	.about-ti {
+		line-height: 24px;
+		font-size: 16px;
+	}
+
+	.rentCar_types {
+		width: 70%;
+		font-size: 14px;
+	}
+
+	.make-request button {
+		width: 45%;
+		height: 45px;
+		font-size: 14px;
+	}
+
+
+	/* Our advantages */
+	.advantages {
+		font-size: 26px;
+		font-weight: 700;
+	}
+
+	.advantages-items {
+		margin: 25px auto;
+	}
+
+	footer {
+		padding: 20px 0;
+	}
+
+	.footer-menu a {
+		width: 38%;
+		font-size: 13px;
+		text-align: left;
+		padding: 3px 8px;
+	}
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
+/* Very small devices (portrait phones, 375px and down) */
+
+@media (max-width: 375px) {
+	.call-number, .phone {
+		display: none;
+	}
+
+	.call-taxi {
+		width: 100%;
+	}
+
+	.elite-taxi {
+		font-size: 35px;
+	}
+
+	.about-taxi {
+		margin: 20px auto;
+		padding: 0;
+		font-size: 11px;
+	}
+
+	/* Car types */
+
+	.car-types_container div:last-child {
+		margin: 20px auto;
+	}
+
+	.car-block {
+		width: 100%;
+		margin: 20px auto;
+	}
+
+	.about-ti {
+		line-height: 20px;
+		font-size: 13px;
+	}
+
+	.rent-car-items {
+		border-top: 2px solid rgba(0,0,0,.1);
+		padding: 15px 0;
+	}
+
+	.make-request button {
+		font-size: 12px;
+	}
+
+	.rentCar_types {
+		width: 83%;
+	}
+
+
+	/* Our advantages */
+	.advantages {
+		font-size: 23px;
+		font-weight: 700;
+	}
+
+	/* Footer */
+	footer {
+		overflow: hidden;
+	}
+
+	.footer-inner-wrapper {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	.footer-menu a {
+		font-size: 7px;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 3px 3px;
+		text-align: center;
+		display: inline-block;
+	}
+}
